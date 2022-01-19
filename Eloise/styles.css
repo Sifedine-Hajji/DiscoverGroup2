@@ -1,0 +1,107 @@
+/************************************* ##HTML tags Details&summary ****************************************/
+
+details {
+    border: 1px solid lightskyblue;
+    border-radius: 4px;
+    padding: .5em .5em 0 ;
+}
+
+/* .5em = 8px */ 
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em; 
+}
+
+/* Lorsque l'utilisateur appuie sur la petite flèche, il devoile son contenu, c'est pourquoi, on peut utiliser attribut [open] */ 
+
+details[open] {
+    border-bottom: 1px solid lightskyblue;
+    margin-bottom: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid lightskyblue;
+    margin-bottom:  .5em;
+}
+
+/************************************* ##Propriétés text-decorations(all) ****************************************/
+
+.elo-test {
+    line-height: 25px;
+    color: lightslategrey;
+    font-family: sans-serif;
+}
+
+.elo-test .exemple { 
+    text-decoration-line: underline;
+    text-decoration-color: rgb(255, 90, 255);
+}
+
+/* lorsqu'on définit la décoration "souligné" au texte, on peut lui attribuer une couleur, grâce au texte-decoration-color */ 
+
+.elo-test .exemple:hover {
+    color:blue;
+    text-decoration-line: line-through;
+}
+
+/* effet au survol qui permet de "barré" au lieu que ça soit souligné */
+
+.elo-test .decoration {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: hsl(70, 100%, 40%);
+}
+
+/* text-decoration-line, permet de décorer le texte, plus souvent utilisé sous la forme "text-decoration" 
+*text-decoration-style permet de définir le style de la décoration */ 
+
+.elo-test .skip {
+    color: lightsalmon;
+    text-decoration-color: goldenrod;
+    text-decoration-line: underline;
+    text-decoration-skip: leading-spaces;
+}
+
+/*  text-decoration-skip est une propriété, qui définit la façon dont les lignes décoration doivent être appliquées aux éléments et aux caractères ! Il existe plusieurs valeurs : none, objects, spaces, leading-spaces, trailing-spaces, edge, box-decoration... */ 
+
+.elo-test .ink {
+    color:plum;
+    text-decoration-line: underline;
+    text-decoration-color:  rebeccapurple;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 2px;
+}
+
+/* text-decoraiton-skip-ink définit la façon dont la ligne décoration est dessinée lorsqu'elle rencontre le jambage ou la hampe d'un caractère 
+la valeur auto permet d'interrompre la ligne à chaque fois qu'elle croise un glyphe
+le text-decoration thichkness définit l'épaisseur ou la larguer de la ligne */ 
+
+.elo-test .all {
+    text-decoration: line-through solid blue 3px;
+}
+
+/* text-decoration permet de réunir plusieurs valeurs vue ci-dessus ! */
+
+/************************************* ##Sélecteur :current ****************************************/
+
+video {
+    max-width: 50%;
+  }
+
+video::cue {
+    background: rgba(0, 0, 0, .5);
+    color: yellow;
+    font-weight: 800;
+    padding: 1rem;
+  }
+
+  /* le sélecteur cue, sélectionne les sous-ttires qui sont en train d'appararaître à l'écran */
+
+  video::cue(b) {
+      color: lightgreen;
+  }
+ 
+  /* le sélecteur cue, sélectionne le sous-titres dans la balise <b> */
+  

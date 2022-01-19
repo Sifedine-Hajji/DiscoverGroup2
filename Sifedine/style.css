@@ -1,0 +1,64 @@
+body {
+    background: #293241;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.459);
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+}
+h2 {
+    background: black;
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+}
+h4 {
+    color: white;
+}
+.property-ct {
+    display: flex;
+    flex-direction: column;
+
+}
+.name-desc-ct {
+    background: #EE6C4D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.property-name {
+    font-size: 20px;
+}
+.description {
+    margin: 0;
+    max-width: 60%;
+}
+.example-ct {
+    display: flex;
+    justify-content: center;
+}
+.example {
+    background: #e0fbfc67;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.486);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+.hyphens {
+    width: 400px;
+    hyphens: auto;
+}
+.hyphens strong {
+    color: green;
+}
+
+:dir(rtl) {
+    background-color: red;
+}

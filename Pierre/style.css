@@ -1,0 +1,52 @@
+/* progress bar */
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+.progress-50{
+    width: 800px;
+    background-color: green;
+}
+.progress-80{
+    width: 800px; 
+    background-color: red;
+    color: wheat;
+}
+/*border-image*/
+.degrade{
+    margin: 20px;
+    text-align: center;
+    border: 40px solid ;
+    border-image: linear-gradient(red, pink) 30;
+}
+.image{
+    margin: 20px;
+    text-align: center;
+    border: solid orange 40px;
+    border-image: url("/images/border.png") 29 round;
+    border-image-outset: 15px
+}
+/*clip-path*/
+.r-cercle {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    clip-path: circle(20%);
+    display: flex;
+    align-items: center;
+}
+.r-img-ell {
+    clip-path: ellipse(130px 140px at 10% 20%);;
+}
+.r-img-poly {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+.r-img-path {
+    clip-path: path('M15,45 A30,30,0,0,1,75,45 A30,30,0,0,1,135,45 Q135,90,75,130 Q15,90,15,45 Z') ;
+}
+/*clamp */
+.clamp{
+    border: 2px solid red;
+    width: 80%;
+    font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
+}

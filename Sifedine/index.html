@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>Discovery Group 2</h1>
+
+    <h2>html tags</h2>
+
+    <section class="property-ct">
+
+        <div class="name-desc-ct">
+            <h3 class="property-name"> &#60;datalist&#62;</h3>
+            <p class="description">
+                <strong>Description</strong>: la Balise "datalist" permet de contenir des option avec une certaine
+                valeur
+                pré-écrite lors du remplissage d'un champ de texte.
+            </p>
+        </div>
+
+        <h4>Exemple :</h4>
+
+        <div class="example-ct">
+            <div class="example">
+                <!-- Compatibile tout navigateur exepté Firefox Android -->
+                <label for="nba-teams-choice">Choose a NBA Team</label>
+                <input list="nba-teams" name="nba-teams-choice" id="nba-teams-choice">
+                <datalist id="nba-teams">
+                    <option value="Boston Celtics"></option>
+                    <option value="Brooklyn Nets"></option>
+                    <option value="Toronto Raptors"></option>
+                    <option value="Chicago Bulls"></option>
+                    <option value="Cleveland Cavaliers"></option>
+                    <option value="Miami Heat"></option>
+                    <option value="Milwaukee Bucks"></option>
+                    <option value="Oklahoma City Thunder"></option>
+                    <option value="Golden States Wariors"></option>
+                    <option value="LA Lakers"></option>
+                    <option value="Houston Rockets"></option>
+                    <option value="San Antonio Spurs"></option>
+                </datalist>
+            </div>
+
+        </div>
+
+    </section>
+
+    <h2>CSS properties</h2>
+
+    <section class="property-ct">
+
+        <div class="name-desc-ct">
+            <h3 class="property-name">caret-color/caret-shape</h3>
+            <p class="description">
+                <Strong>Description</Strong>: <strong>caret-color</strong> définit la couleur du curseur visible à
+                l'endroit
+                où l'utilisateur peut ajouter
+                du texte ou un autre contenu dans l'élément lorsqu'il saisit au clavier ou qu'il édite les informations.
+                <strong>caret-shape</strong> definit la forme du curseur visible lors d'un saisi de texte
+            </p>
+        </div>
+
+        <h4>Exemple :</h4>
+
+        <div class="example-ct">
+            <div class="example">
+                <h5 contenteditable="true">Ce titre et ce paragraphe Peuvent être modifier</h5>
+                <p contenteditable="true">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eaque voluptatem nemo beatae cum
+                    cumque.
+                    Harum, tenetur! Eaque nisi neque possimus odio consequuntur! Harum dolore officia impedit explicabo
+                    quam
+                    eum!
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="property-ct">
+        <!-- compatible tout navigateur mobile mais sur pc uniquement sur firefox et safari -->
+        <div class="name-desc-ct">
+            <h3 class="property-name">hyphens</h3>
+            <p class="description">
+                <strong>Description</strong>: hyphens permet de changer le comportement de gestion des traits d'union
+                lors
+                des sauts de ligne effectuer automatiquement par certains navigateur.
+            </p>
+        </div>
+
+        <h4>Exemple :</h4>
+
+        <div class="example-ct">
+            <div class="example">
+                <p class="hyphens">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing <strong>extraordinaire</strong> Autem quos
+                    dolore atque
+                    maiores
+                    quam, eum
+                    minima aut ea hic. Autem dolor incidunt cupiditate ipsum delectus, perspiciatis quasi ducimus error
+                    accusamus placeat magnam repudiandae vitae ipsam praesentium nulla? Nesciunt dolores saepe maxime
+                    aliquid nisi beatae. Dolore deserunt totam tempora voluptas esse!
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="property-ct">
+        <div class="name-desc-ct">
+            <h3 class="property-name">:dir</h3>
+            <p class="description">
+                <strong>Description</strong>: est un pseudo-élément qui permet de cibler un élément la direction du
+                texte
+            </p>
+        </div>
+
+        <h4>Exemple :</h4>
+
+        <div class="example-ct">
+            <div class="example">
+                <p dir="ltr">
+                    salut je suis un texte avec une direction de gauche à droite (ltr)
+                </p>
+                <p dir="rtl">
+                    لا شكر على واج ب(rtl)
+                </p>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

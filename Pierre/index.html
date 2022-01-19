@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper ">
+        <h2>Un barre de progression ?</h2>
+        <p>une balise inline, qui permet d'afficher la progression d'une tâche</p>
+        <p>prend les attributs globaux et possède 2 attributs spécifique, "value" pour la valeur actuelle et "max" pour
+            la valeur totale </p>
+        <div>
+            <label for="progress-50">value avec la valeur 50</label>
+            <progress class="progress-50" id="progress-50" max="100" value="50"> 50% </progress>
+        </div>
+        <div>
+            <label for="progress-80">value avec la valeur 80</label>
+            <progress class="progress-80" id="progress-80" max="100" value="80"> 80% </progress>
+        </div>
+        <h3>avec un peu de js il est possible d'animé tout ça</h3>
+        <progress class="progress-js" id="progress-javascript-example" min="1" max="100"></progress>
+        <br /><br />
+        <button onclick="abc()">cliquez sur moi</button>
+        <p>nécéssite des webkit pour certaine propriétées css</p>
+        <script src="/main.js"></script>
+    </div>
+    <div class="wrapper ">
+        <h2>C'est quoi le border-image</h2>
+        <p>cette propriété css permet d'appliquer une image sur une bordure</p>
+        <p>c'est la version raccourcie de border-image-source, border-image-width, border-image-repeat,
+            border-image-slice, border-image-outset</p>
+        <ul>
+            <li>border-image-source : L'image source.</li>
+            <li>border-image-slice : La façon dont l'image est découpée en zones (jusqu'à 4).</li>
+            <li>border-image-outset : La distance entre la bordure et le bord de l'élément.</li>
+            <li>border-image-repeat : La façon dont l'image source est adaptée afin de correspondre aux dimensions de la
+                bordure.</li>
+            <li>border-image-width : La largeur de la bordure avec l'image.</li>
+        </ul>
+        <h3>Utilisation avec un dégradé</h3>
+        <div class="degrade">
+            <p>C'est une boite avec un border-image et un gradient</p>
+        </div>
+        <h3>Utilisation avec une image</h3>
+        <div class="image">
+            <p>C'est une boite avec un border-image et une image</p>
+        </div>
+    </div>
+    <div class="wrapper ">
+        <h2>Le clip-path</h2>
+        <p>Définit une région de rognage d'un élément</p>
+        <h3>Cercle</h3>
+        <div class="r-cercle">
+            <p>Ce texte est rogné</p>
+        </div>
+        <h3>Ellipse</h3>
+        <div class="r-img-ell"><img src="images/yun_14362.jpg" alt=""></div>
+        <h3>forme polygonale</h3>
+        <div class="r-img-poly"><img src="images/yun_14362.jpg" alt=""></div>
+        <h3>avec un chemin de rognage</h3>
+        <div class="r-img-path"><img src="images/yun_14362.jpg" alt=""></div>
+    </div>
+    <div class="wrapper">
+        <h2>clamp</h2>
+        <p>Permet d'indiquer une taille maximal et une taille minimal a un élément</p>
+        <p>c'est un calcul css, clamp(MIN, VAL, MAX) min étant la valeur minimum, val la valeur préférée et max la
+            valeur maximum</p>
+        <p>permet par exemple d'adapter le texte</p>
+        <div class="clamp clamped">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsa voluptatum suscipit perspiciatis
+                dolorem numquam magni, quae earum et consequuntur fugiat in libero deserunt consequatur doloremque
+                tenetur molestiae inventore? Expedita.
+                Dolorum alias animi commodi nesciunt veniam quisquam necessitatibus corporis adipisci quam est maiores
+                sint atque fugiat, sed ipsum quos delectus quidem asperiores dolores perspiciatis molestiae blanditiis
+                porro? Laboriosam, officiis minus?
+                Molestias id accusantium esse cumque, sapiente quaerat pariatur animi facere quos distinctio repellat
+                earum cupiditate. Dolorum debitis dolore, ipsum magnam reiciendis, possimus sed dicta, maxime
+                reprehenderit pariatur delectus consequuntur voluptatibus!
+                Explicabo inventore hic, nulla ea fugit adipisci. Alias consequatur non illo culpa odio et eligendi
+                recusandae, reiciendis asperiores veritatis eaque ex. Ipsam iure itaque dolor provident, consequatur
+                dignissimos delectus rem!</p>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
